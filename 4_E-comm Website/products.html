@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase | Products</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Shared header -->
+    <header>
+        <a href="index.html" class="logo">Shop<span>Ease.</span></a>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="products.html" class="active">Shop</a>
+            <a href="index.html#categories">Categories</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+            <input type="search" id="search" placeholder="Search products...">
+            <a href="wishlist.html" class="cart">Wishlist (<span id="wishlist-count">0</span>)</a>
+      <a href="cart.html" class="cart">
+                Cart (<span id="cart-count">0</span>)
+            </a>
+            <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page introduction -->
+        <section class="shop-banner">
+            <p class="eyebrow">THE SHOPeASE COLLECTION</p>
+            <h1>Find your next favourite.</h1>
+            <p>Useful everyday products, selected with you in mind.</p>
+        </section>
+
+        <!-- Product filters and sorting -->
+        <section class="section">
+            <div class="section-title">
+                <div>
+                    <p class="eyebrow">EXPLORE OUR COLLECTION</p>
+                    <h2>All Products</h2>
+                </div>
+
+                <select id="sort" aria-label="Sort products">
+                    <option value="default">Recommended</option>
+                    <option value="low">Price: Low to High</option>
+                    <option value="high">Price: High to Low</option>
+                    <option value="az">Name: A to Z</option>
+                </select>
+            </div>
+
+            <div class="filters">
+                <button class="filter active" data-category="all">All</button>
+                <button class="filter" data-category="Electronics">Electronics</button>
+                <button class="filter" data-category="Fashion">Fashion</button>
+                <button class="filter" data-category="Accessories">Accessories</button>
+                <button class="filter" data-category="Footwear">Footwear</button>
+            </div>
+
+            <div class="product-grid" id="product-list">
+
+                <article class="product-card" data-name="Wireless Headphones" data-category="Electronics"
+                    data-price="2499" data-description="Enjoy music with comfortable wireless headphones.">
+                    <div class="product-image">
+                        <img src=" https://sony.scene7.com/is/image/sonyglobalsolutions/WH1000XM6_Primary_image_Sand-pink?$primaryshotPreset$&fmt=png-alpha"
+                            alt="Wireless headphones">
+                    </div>
+                    <p class="category">Electronics</p>
+                    <h3>Wireless Headphones</h3>
+                    <p>Comfortable sound for everyday listening.</p>
+                    <div class="product-bottom">
+                        <strong>₹2,499</strong>
+                        <button class="view-details">Details</button>
+                    </div>
+                    <button class="btn add-cart" data-name="Wireless Headphones" data-price="2499">+ Add to
+                        Cart</button>
+                         <button class="wishlist-btn">♡ Add to Wishlist</button>
+                </article>
+
+                <article class="product-card" data-name="Classic Wristwatch" data-category="Accessories"
+                    data-price="2199" data-description="A versatile wristwatch for your everyday style.">
+                    <div class="product-image">
+                        <img src="https://img.chrono24.com/images/uhren/48029605-0a777soz8v4nszxknyq6jgts-ExtraLarge.jpg"
+                            alt="Classic wristwatch">
+                    </div>
+                    <p class="category">Accessories</p>
+                    <h3>Classic Wristwatch</h3>
+                    <p>A timeless addition to your look.</p>
+                    <div class="product-bottom">
+                        <strong>₹2,199</strong>
+                        <button class="view-details">Details</button>
+                    </div>
+                    <button class="btn add-cart" data-name="Classic Wristwatch" data-price="2199">+ Add to Cart</button>
+                    <button class="wishlist-btn">♡ Add to Wishlist</button>
+                </article>
+
+                <article class="product-card" data-name="Everyday Sneakers" data-category="Footwear" data-price="1499"
+                    data-description="Casual sneakers made for everyday outings.">
+                    <div class="product-image">
+                        <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/309381/02/sv01/fnd/IND/fmt/png/BMW-M-MOTORSPORT-PUMA-Fade-Sneakers"
+                            alt="Red sneakers">
+                    </div>
+                    <p class="category">Footwear</p>
+                    <h3>Everyday Sneakers</h3>
+                    <p>Casual comfort for your daily routine.</p>
+                    <div class="product-bottom">
+                        <strong>₹1,499</strong>
+                        <button class="view-details">Details</button>
+                    </div>
+                    <button class="btn add-cart" data-name="Everyday Sneakers" data-price="1499">+ Add to Cart</button>
+                   <button class="wishlist-btn">♡ Add to Wishlist</button>
+                </article>
+
+                <article class="product-card" data-name="Everyday Backpack" data-category="Accessories"
+                    data-price="1299" data-description="A practical backpack for carrying daily essentials.">
+                    <div class="product-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBDvAdW3P4mZ3yzZk_Q7KWo0L0DTsEL1DnnoB5y8t8U2v56pFRf6dELxc&s=10"
+                            alt="Everyday backpack">
+                    </div>
+                    <p class="category">Accessories</p>
+                    <h3>Everyday Backpack</h3>
+                    <p>Room for the things you need.</p>
+                    <div class="product-bottom">
+                        <strong>₹1,299</strong>
+                        <button class="view-details">Details</button>
+                    </div>
+                    <button class="btn add-cart" data-name="Everyday Backpack" data-price="1299">+ Add to Cart</button>
+                    <button class="wishlist-btn">♡ Add to Wishlist</button>    
+                </article>
+
+                <article class="product-card" data-name="Cotton T-Shirt" data-category="Fashion" data-price="699"
+                    data-description="A soft, versatile T-shirt for everyday wear.">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=600&q=80"
+                            alt="Cotton T-shirt">
+                    </div>
+                    <p class="category">Fashion</p>
+                    <h3>Cotton T-Shirt</h3>
+                    <p>A comfortable wardrobe staple.</p>
+                    <div class="product-bottom">
+                        <strong>₹699</strong>
+                        <button class="view-details">Details</button>
+                    </div>
+                    <button class="btn add-cart" data-name="Cotton T-Shirt" data-price="699">+ Add to Cart</button>
+                    <button class="wishlist-btn">♡ Add to Wishlist</button>
+                </article>
+
+                <article class="product-card" data-name="Travel Sunglasses" data-category="Accessories" data-price="899"
+                    data-description="Classic sunglasses for sunny days outdoors.">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=600&q=80"
+                            alt="Sunglasses">
+                    </div>
+                    <p class="category">Accessories</p>
+                    <h3>Travel Sunglasses</h3>
+                    <p>A stylish companion for sunny days.</p>
+                    <div class="product-bottom">
+                        <strong>₹899</strong>
+                        <button class="view-details">Details</button>
+                    </div>
+                    <button class="btn add-cart" data-name="Travel Sunglasses" data-price="899">+ Add to Cart</button>
+                    <button class="wishlist-btn">♡ Add to Wishlist</button>
+                    
+                </article>
+
+                <article class="product-card" data-name="Smart Watch" data-category="Electronics" data-price="2999"
+                    data-description="A smart watch for everyday activity and notifications.">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?auto=format&fit=crop&w=600&q=80"
+                            alt="Smart watch">
+                    </div>
+                    <p class="category">Electronics</p>
+                    <h3>Smart Watch</h3>
+                    <p>Useful features in a compact design.</p>
+                    <div class="product-bottom">
+                        <strong>₹2,999</strong>
+                        <button class="view-details">Details</button>
+                    </div>
+                    <button class="btn add-cart" data-name="Smart Watch" data-price="2999">+ Add to Cart</button>
+                    <button class="wishlist-btn">♡ Add to Wishlist</button>
+                </article>
+
+                <article class="product-card" data-name="Casual Handbag" data-category="Fashion" data-price="1899"
+                    data-description="A versatile handbag for everyday essentials.">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=600&q=80"
+                            alt="Casual handbag">
+                    </div>
+                    <p class="category">Fashion</p>
+                    <h3>Casual Handbag</h3>
+                    <p>Everyday style with practical storage.</p>
+                    <div class="product-bottom">
+                        <strong>₹1,899</strong>
+                        <button class="view-details">Details</button>
+                    </div>
+                    <button class="btn add-cart" data-name="Casual Handbag" data-price="1899">+ Add to Cart</button>
+                    <button class="wishlist-btn">♡ Add to Wishlist</button>    
+                </article>
+
+            </div>
+
+            <p id="no-results" hidden>No products found. Try another search.</p>
+        </section>
+
+        <!-- Product Details Popup -->
+        <div id="details-modal" class="modal" hidden>
+            <div class="modal-box">
+                <img id="modal-img" src="" alt="">
+                <p id="modal-category" class="category"></p>
+                <h3 id="modal-name"></h3>
+                <p id="modal-desc"></p>
+                <div class="product-bottom">
+                    <strong id="modal-price"></strong>
+                    <button id="close-modal" class="filter">Close ✕</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <a href="index.html" class="logo">Shop<span>Ease.</span></a>
+        <p>Everyday finds, thoughtfully chosen.</p>
+        <p>© 2026 ShopEase. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

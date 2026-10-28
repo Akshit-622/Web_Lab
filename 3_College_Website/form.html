@@ -1,0 +1,84 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>
+        <h2>Admission Form</h2>
+    </title>
+</head>
+
+<body>
+    <header >
+         <a class="student_login" href="login.html">Student Login</a>
+        <img id="logo" src="gallery/gcet_logo_transparent.png" alt="logo">
+        <h1 class="Form-header"align="center">Government College Of Engineering And Technology</h1>
+    </header>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="faculty.html">Faculty</a>
+        <a href="gallery.html">Photo Gallery</a>
+        <a href="form.html">Student Admission</a>
+    </nav>
+    <main class="form-main">
+        <div class="text-reg"><h1 align="center">Student Registration Form</h1></div>
+
+            <form class="form_container" action="p1.html" method="GET">
+        
+                <div class="form-row">
+                    Name:
+                    <input type="text" name="username" placeholder="Enter Your name" required>
+                </div>
+        
+                <div class="form-row">
+                    Email:
+                    <input type="email" name="email" placeholder="abc@xyz.gmail.com" required>
+                </div>
+        
+                <div class="form-row">
+                    Address:
+                    <input type="text" name="address" placeholder="Enter Your Address">
+                </div>
+        
+                <div class="form-row">
+                    Gender:
+                    <input type="radio" name="Gender" id="Male" value="Male">
+                    <label for="Male">Male</label>
+        
+                    <input type="radio" name="Gender" id="Female" value="Female">
+                    <label for="Female">Female</label>
+                </div>
+        
+                <div class="form-row">
+                    Date of Birth:
+                    <input type="date" name="Date of Birth" value="2000-01-01">
+                </div>
+        
+                <div class="form-row">
+                    Mobile No.:
+                    <input type="tel" name="Mobile No">
+                </div>
+                <div class="form-row">
+                    Course:
+                    <select name="Course" id="Course" required>
+                        <option value="" selected disabled>-- Please Select --</option>
+                        <option>Computers</option>
+                        <option>Electrical</option>
+                        <option>Civil</option>
+                        <option>Mechanical</option>
+                        <option>Electronics</option>
+                    </select>
+                </div>
+                <input type="submit" value="SUBMIT">
+        
+            </form>
+    </main>
+    <footer>
+
+        <p>
+            2026 ABC College. All Rights Reserved.
+        </p>
+
+    </footer>
+</body>
+
+</html>

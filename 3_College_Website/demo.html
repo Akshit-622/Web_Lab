@@ -1,0 +1,156 @@
+<html>
+
+<head>
+  <style>
+    body {
+    margin: 0;
+    min-height: 100vh;
+
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+header {
+    color: white;
+    background-color: #1565c0;
+    border: 1px solid black;
+    padding: 30px;
+    font-size: 18px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 180px minmax(0, 1fr);
+    grid-template-rows: auto auto;
+    gap: 30px;
+    padding-bottom: 30px;
+}
+
+.sidebar {
+    grid-column: 1;
+    grid-row: 1 / 3;
+}
+
+.info {
+    grid-column: 2;
+    grid-row: 1;
+
+    font-size: 30px;
+    min-width: 0;
+}
+
+.info h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.features {
+    grid-column: 2;
+    grid-row: 2;
+
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 25px;
+
+    align-self: start;
+    margin-top: 100px;
+}
+
+.feature-card {
+    width: auto;
+    min-width: 0;
+    min-height: 130px;
+    padding: 25px;
+    box-sizing: border-box;
+
+    text-align: center;
+    background-color: white;
+    border-radius: 25px;
+    border-top: 4px solid #1565c0;
+}
+
+.feature-card:hover {
+    background-color: #f0f6ff;
+}
+
+.feature-card h3 {
+    color: #0d47a1;
+}
+
+.feature-card p {
+    margin-top: 25px;
+    line-height: 1.5;
+}
+
+footer {
+    background-color: #1565c0;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+  </style>
+</head>
+
+<body>
+    <header class="Profile">
+        <h1>GCET Jammu Student Portal</h1>
+    </header>
+    <main>
+        <nav class="sidebar">
+            <a href="">
+                <h2>Profile</h2>
+            </a>
+            <a href="">
+                <h2>My courses</h2>
+            </a>
+            <a href="">
+                <h2>My Marks</h2>
+            </a>
+            <a href="home.html">
+                <h2>Logout</h2>
+            </a>
+        </nav>
+        <section>
+            <div class="info">
+                <div>
+                    <h2>Personal Details</h2>
+                </div>
+                <div>
+                    Name:Akshit Nargotra
+                </div>
+                <div>
+                    Semester:3rd
+                </div>
+                <div>
+                    Branch:CSE
+                </div>
+            </div>
+        </section>
+        <section class="features" id="Details">
+            <div class="feature-card" id="dashboard_container">
+                <h3>Marks</h3>
+                <p>74%</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>SGPA</h3>
+                <p>7.75</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>Attendance</h3>
+                <p>92%</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>courses</h3>
+                <p>5</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>2026 GCET Jammu. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
